@@ -111,7 +111,7 @@
 
     /* LAYOUTS */
     .c2   { display: grid; grid-template-columns: 1fr 1.3fr; gap: 64px; align-items: start; }
-    .c2eq { display: grid; grid-template-columns: 1fr 1fr;   gap: 56px; align-items: start; }
+    .c2eq { display: grid; grid-template-columns: 1fr 1fr;   gap: 56px; align-items: stretch; }
     .c3   { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 2px; }
 
     /* TEXT */
@@ -177,6 +177,12 @@
     .s-dark .cb__num   { color: var(--blu-400); }
     .s-dark .cb__title { color: var(--white); }
     .s-dark .cb__desc  { color: var(--grey-mid); }
+    .cb--light .cb__num   { color: var(--blu-700); }
+    .cb--light .cb__title { color: var(--black); }
+    .cb--light .cb__desc  { color: var(--grey-text); }
+    .dl-btn { display: flex; align-items: center; gap: 12px; border: 2px solid var(--lime); color: var(--lime); padding: 16px 24px; font-family: var(--fm); font-size: 11px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; text-decoration: none; margin-top: auto; transition: background .2s, color .2s; }
+    .dl-btn:hover { background: var(--lime); color: var(--black); }
+    .dl-icon { width: 18px; height: 18px; stroke: currentColor; fill: none; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; flex-shrink: 0; }
 
     /* SUB TITLE */
     .stitle { font-family: var(--fd); font-weight: 400; font-size: 23px; color: var(--black); margin: 48px 0 24px; padding-bottom: 12px; border-bottom: 2px solid var(--grey-mid); }
@@ -447,7 +453,7 @@
       <div class="cb" style="background:var(--grey-light);padding:24px 32px;">
         <div class="cb__num">Grafico 01</div>
         <div class="cb__title">Scomposizione degli impatti — Diretto, Indiretto, Indotto</div>
-        <div class="cb__desc">PIL, Valore della Produzione, Occupazione e Redditi per canale di trasmissione</div>
+        <div class="cb__desc">Impatto sul PILper canale di trasmissione</div>
         <iframe src='https://flo.uri.sh/visualisation/28421095/embed' title='Interactive or visual content' class='flourish-embed-iframe' frameborder='0' scrolling='no' style='width:100%;height:400px;' sandbox='allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation'></iframe>
     </div>
   </div>
@@ -584,7 +590,7 @@
         <div class="step__n">04</div>
         <div>
           <h4>Perimetro della spesa — Mediobanca</h4>
-          <p>Punto di partenza: studio Area Studi Mediobanca (ed. 2024) — perimetro di imprese del comparto con fatturato aggregato di circa 20 miliardi di euro. Dai settori ATECO corrispondenti sono stati rilevati da ISTAT i fatturati complessivi nazionali, le spese per il personale e gli acquisti di beni e servizi.</p>
+          <p>Punto di partenza: <a href="https://www.areastudimediobanca.com/it/product/report-difesa-sistema-difesa-nel-mondo-e-italia-ed-2024" target="_blank" rel="noopener" style="color:var(--lime);text-underline-offset:3px;">studio Area Studi Mediobanca (ed. 2024)</a> — perimetro di imprese del comparto con fatturato aggregato di circa 20 miliardi di euro. Dai settori ATECO corrispondenti sono stati rilevati da ISTAT i fatturati complessivi nazionali, le spese per il personale e gli acquisti di beni e servizi.</p>
         </div>
       </div>
       <div class="step">
@@ -601,6 +607,11 @@
           <p>Gli impatti stimati descrivono gli effetti della spesa in condizioni di ceteris paribus, con le assunzioni tipiche dei modelli di contabilità sociale. Il PIL misura la ricchezza effettivamente generata, evitando duplicazioni tipiche del valore della produzione. Per maggiori dettagli consultare la Nota Metodologica integrale.</p>
         </div>
       </div>
+
+      <a href="#" class="dl-btn" download>
+        <svg class="dl-icon" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+        <span>Scarica la Nota Metodologica</span>
+      </a>
     </div>
 
     <div class="tx tx--d">
@@ -612,6 +623,14 @@
       <div class="hlb">
         <div class="hlb__bar"></div>
         <div class="hlb__tx">La realizzazione degli effetti moltiplicativi dipende in misura rilevante dal <strong>perimetro complessivo della spesa</strong>, dal livello di contenuto domestico o europeo delle produzioni e dalla capacità di coordinamento degli investimenti (IMF settembre 2025; DNB febbraio 2026).</div>
+      </div>
+
+      <div class="cb cb--light" style="background:var(--grey-light);padding:24px 32px;margin-top:24px;">
+        <div class="cb__num">Grafico 03</div>
+        <div class="cb__title">Settori principali di spesa del comparto — 2023</div>
+        <div class="cb__desc">Distribuzione percentuale della spesa per categoria: mezzi di trasporto, ICT, R&amp;S, costruzioni, servizi professionali, altri</div>
+        <iframe src='https://flo.uri.sh/visualisation/28426017/embed' title='Interactive or visual content' class='flourish-embed-iframe' frameborder='0' scrolling='no' style='width:100%;height:250px;' sandbox='allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation'></iframe>
+        </div>
       </div>
     </div>
   </div>
@@ -694,13 +713,10 @@
 
       <div class="ch1">
         <div class="cb" style="background:var(--grey-light);padding:24px 32px;">
-          <div class="cb__num">Grafico 03</div>
-          <div class="cb__title">Moltiplicatori di spesa — PIL, Produzione, Occupazione</div>
-          <div class="cb__desc">Confronto dei tre moltiplicatori e benchmarking con media spesa pubblica italiana</div>
-          <div class="fl">
-            <i data-lucide="bar-chart-2" class="fl-icon"></i>
-            <div class="fl__tag">Flourish embed</div>
-            <div class="fl__title">Bar chart — moltiplicatori</div>
+          <div class="cb__num">Grafico 04</div>
+          <div class="cb__title">Scomposizione degli impatti — Diretto, Indiretto, Indotto</div>
+          <div class="cb__desc">PIL, Valore della Produzione, Occupazione e Redditi per canale di trasmissione</div>
+          <iframe src='https://flo.uri.sh/visualisation/28426426/embed' title='Interactive or visual content' class='flourish-embed-iframe' frameborder='0' scrolling='no' style='width:100%;height:330px;' sandbox='allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation'></iframe>
           </div>
         </div>
       </div>
@@ -718,30 +734,15 @@
       <p>In termini di contributo al <strong>PIL</strong>, il settore dominante è la <strong>Ricerca e Sviluppo (R&amp;S)</strong>, che beneficia dalle spese in innovazione, brevetti e know-how. Per il <strong>Valore della Produzione</strong>, spicca il settore degli <strong>altri mezzi di trasporto</strong> (componentistica aerospaziale, navale e terrestre ad alta tecnologia). Per l'<strong>Occupazione</strong>, domina il settore <strong>ICT</strong>, seguito da R&amp;S e altri mezzi di trasporto.</p>
       <p>Particolarmente rilevante è il ruolo del settore <strong>immobiliare</strong>, che si posiziona tra i comparti più impattati pur non avendo impatti diretti: secondo per contributo al PIL e quarto per Valore della Produzione. Questo riflette la struttura dell'economia italiana, dove le attività immobiliari rappresentano un canale privilegiato per l'allocazione del risparmio familiare — i redditi qualificati generati dal comparto vengono parzialmente reimmessi attraverso affitti, mutui e investimenti residenziali.</p>
       <p>In sintesi, il settore concentra valore aggiunto e occupazione qualificata nei settori ad alta intensità di innovazione (R&amp;S, ICT, trasporti avanzati), e al contempo produce effetti diffusi su comparti di servizi e consumi familiari, contribuendo in misura significativa alla generazione di PIL, redditi e gettito fiscale.</p>
+      <p>Il grafico 05 mostra i primi 20 settori per impatto nelle tre dimensioni: PIL, Valore della Produzione e Occupazione. L'effetto macroeconomico però si estende su tutti i settori economici, soprattutto mediante gli impatti indiretti e indotti.</p>
     </div>
 
     <div>
-      <div class="ch2" style="margin-bottom:32px;">
-        <div class="cb" style="background:var(--grey-light);padding:24px 32px;">
-          <div class="cb__num">Grafico 04</div>
-          <div class="cb__title">Top settori per contributo al PIL — 2023</div>
-          <div class="cb__desc">R&S, immobiliare, ICT, mezzi di trasporto, costruzioni, commercio, servizi professionali</div>
-          <div class="fl">
-            <i data-lucide="bar-chart-2" class="fl-icon"></i>
-            <div class="fl__tag">Flourish embed</div>
-            <div class="fl__title">Horizontal bar — top settori PIL</div>
-          </div>
-        </div>
-        <div class="cb" style="background:var(--grey-light);padding:24px 32px;">
-          <div class="cb__num">Grafico 05</div>
-          <div class="cb__title">Top settori per occupazione attivata (ETP)</div>
-          <div class="cb__desc">ICT, R&S, mezzi di trasporto, costruzioni, alloggio-ristorazione, commercio</div>
-          <div class="fl">
-            <i data-lucide="table" class="fl-icon"></i>
-            <div class="fl__tag">Flourish embed</div>
-            <div class="fl__title">Bar chart — top settori occupazione ETP</div>
-          </div>
-        </div>
+      <div class="cb" style="background:var(--grey-light);padding:24px 32px;margin-bottom:32px;">
+        <div class="cb__num">Grafico 05</div>
+        <div class="cb__title">Primi 20 settori per PIL, Valore della Produzione e Occupazione — 2023</div>
+        <div class="cb__desc">Confronto multidimensionale sui tre indicatori</div>
+        <iframe src='https://flo.uri.sh/visualisation/28426575/embed' title='Interactive or visual content' class='flourish-embed-iframe' frameborder='0' scrolling='no' style='width:100%;height:600px;' sandbox='allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation'></iframe>
       </div>
     </div>
   </div>
