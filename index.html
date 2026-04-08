@@ -57,21 +57,23 @@
     .toc__dot:hover::after { opacity: 1; }
 
     /* HERO */
-    .hero { margin-top: 56px; background: var(--blu-900); min-height: 88vh; display: grid; grid-template-columns: 1fr 1fr; position: relative; overflow: hidden; }
+    .hero { margin-top: 56px; background: var(--blu-900); min-height: 72vh; display: grid; grid-template-columns: 1fr 1fr; position: relative; overflow: hidden; }
     .pix { position: absolute; inset: 0; pointer-events: none; overflow: hidden; }
     .pix span { position: absolute; background: var(--blu-700); opacity: .18; }
-    .hero__l { position: relative; z-index: 2; display: flex; flex-direction: column; justify-content: center; padding: 80px 64px; }
-    .hero__tag { display: inline-flex; align-items: center; gap: 6px; background: var(--lime); color: var(--black); font-family: var(--fm); font-size: 11px; letter-spacing: .14em; text-transform: uppercase; padding: 4px 10px; width: fit-content; margin-bottom: 24px; }
-    .hero__sector { font-weight: 600; font-size: 13px; letter-spacing: .1em; text-transform: uppercase; color: var(--white); margin-bottom: 12px; }
-    .hero__title { font-family: var(--fd); font-weight: 400; font-size: clamp(34px, 4vw, 60px); line-height: 1.1; color: var(--white); margin-bottom: 20px; }
+    .hero__l { position: relative; z-index: 2; display: flex; flex-direction: column; justify-content: space-between; padding: 56px 64px 42px; }
+    .hero__top { display: flex; flex-direction: column; gap: 16px; }
+    .hero__bottom { display: flex; flex-direction: column; }
+    .hero__tag { display: inline-flex; align-items: center; gap: 6px; background: var(--lime); color: var(--black); font-family: var(--fm); font-size: 11px; letter-spacing: .14em; text-transform: uppercase; padding: 4px 10px; width: fit-content; }
+    .hero__sector { font-weight: 600; font-size: 13px; letter-spacing: .1em; text-transform: uppercase; color: var(--white); margin-bottom: 0; }
+    .hero__sub { font-size: 18px; color: var(--grey-mid); max-width: 600px; margin-bottom: 0; line-height: 1.7; }
+    .hero__title { font-family: var(--fd); font-weight: 400; font-size: clamp(34px, 4vw, 60px); line-height: 1.1; color: var(--white); margin-bottom: 36px; }
     .hero__title em { font-style: normal; color: var(--lime); }
-    .hero__sub { font-size: 16px; color: var(--grey-mid); max-width: 440px; margin-bottom: 40px; line-height: 1.7; }
     .hero__meta { display: flex; gap: 28px; flex-wrap: wrap; }
     .hero__mi { display: flex; flex-direction: column; gap: 2px; }
     .hero__ml { font-family: var(--fm); font-size: 10px; letter-spacing: .16em; text-transform: uppercase; color: var(--lime); }
     .hero__mv { font-weight: 600; font-size: 14px; color: var(--grey-light); }
-    .hero__r { position: relative; z-index: 2; overflow: hidden; }
-    .hero__img { width: 100%; height: 100%; object-fit: cover; object-position: center top; display: block; opacity: .75; transition: opacity .5s; }
+    .hero__r { position: relative; z-index: 2; overflow: hidden; background: var(--blu-900); }
+    .hero__img { width: 100%; height: 100%; object-fit: contain; object-position: center center; display: block; opacity: .75; transition: opacity .5s; }
     .hero__r:hover .hero__img { opacity: .92; }
     .hero__cap { position: absolute; bottom: 0; left: 0; right: 0; background: var(--blu-900); padding: 12px 24px; display: flex; justify-content: space-between; align-items: center; opacity: .9; }
     .hero__cap span { font-family: var(--fm); font-size: 11px; letter-spacing: .1em; text-transform: uppercase; color: var(--grey-mid); }
@@ -339,13 +341,17 @@
   </div>
 
   <div class="hero__l">
-    <div class="hero__tag">
-      <i data-lucide="satellite" style="width:12px;height:12px;stroke-width:2"></i>
-      Analisi di impatto macroeconomico
+    <div class="hero__top">
+      <div class="hero__tag">
+        <i data-lucide="satellite" style="width:12px;height:12px;stroke-width:2"></i>
+        Analisi di impatto macroeconomico
+      </div>
+      <div class="hero__sector">Industria &amp; Competitività · Italia</div>
     </div>
-    <div class="hero__sector">Industria &amp; Competitività · Italia</div>
-    <h1 class="hero__title">Il comparto italiano<br><em>Aerospazio</em> &amp; <em>Difesa</em></h1>
-    <p class="hero__sub">Analisi degli impatti della spesa del 2023 sull'economia nazionale. Elaborazione OpenEconomics su dati ISTAT e Mediobanca.</p>
+    <div class="hero__bottom">
+      <h1 class="hero__title">Il comparto italiano<br><em>Aerospazio</em> &amp; <em>Difesa</em></h1>
+      <p class="hero__sub">Analisi degli impatti della spesa del 2023 sull'economia nazionale</p>
+    </div>
     <div class="hero__meta">
       <div class="hero__mi"><span class="hero__ml">Anno di riferimento</span><span class="hero__mv">2023</span></div>
       <div class="hero__mi"><span class="hero__ml">Fonti</span><span class="hero__mv">ISTAT · Mediobanca</span></div>
@@ -360,7 +366,6 @@
       alt="Fregata italiana Federico Martinengo F596 con NH-90">
     <div class="hero__cap">
       <span>Fregata Federico Martinengo F596 con NH-90 · Marina Militare Italiana</span>
-      <strong>2023</strong>
     </div>
   </div>
 </section>
