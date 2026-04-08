@@ -22,7 +22,7 @@
       --grey-text:  #555555;
       --fd:         'Hedvig Letters Serif', Lora, Georgia, serif;
       --fb:         'Atkinson Hyperlegible Next', Poppins, Calibri, sans-serif;
-      --fm:         'Courier New', Consolas, monospace;
+      --fm:         'Atkinson Hyperlegible Next', Poppins, Calibri, sans-serif;
     }
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     html { scroll-behavior: smooth; }
@@ -99,7 +99,7 @@
     .mc:hover .mcl { color: var(--blu-400); }
     .mcw { width: 30px; height: 30px; margin-bottom: 6px; }
     .mci { width: 30px; height: 30px; stroke: var(--blu-700); fill: none; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; transition: stroke .2s; }
-    .mcl { font-family: var(--fm); font-size: 10px; letter-spacing: .13em; text-transform: uppercase; color: var(--grey-text); transition: color .2s; }
+    .mcl { font-family: var(--fm); font-size: 12px; letter-spacing: .13em; text-transform: uppercase; color: var(--black); transition: color .2s;font-weight: bold; }
     .mcv { font-family: var(--fd); font-weight: 400; font-size: 40px; color: var(--blu-700); line-height: 1; transition: color .2s; }
     .mcu { font-family: var(--fm); font-size: 12px; color: var(--grey-text); transition: color .2s; }
     .mcd { font-size: 12px; color: var(--grey-text); line-height: 1.5; margin-top: 4px; transition: color .2s; }
@@ -141,7 +141,7 @@
     .ic { background: var(--blu-800); padding: 28px 22px; display: flex; flex-direction: column; gap: 10px; transition: background .25s; cursor: default; }
     .ic:hover { background: var(--blu-700); }
     .ic__icon svg { width: 34px; height: 34px; stroke: var(--lime); fill: none; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; }
-    .ic__lbl   { font-family: var(--fm); font-size: 9px; letter-spacing: .16em; text-transform: uppercase; color: var(--blu-400); }
+    .ic__lbl   { font-family: var(--fm); font-size: 11px; letter-spacing: .16em; text-transform: uppercase; color: var(--lime); }
     .ic__val   { font-family: var(--fd); font-weight: 400; font-size: 28px; color: var(--lime); line-height: 1; }
     .ic__title { font-weight: 600; font-size: 13px; color: var(--white); }
     .ic__desc  { font-size: 12px; color: var(--grey-mid); line-height: 1.55; }
@@ -347,7 +347,7 @@
       <div class="hero__mi"><span class="hero__ml">Anno di riferimento</span><span class="hero__mv">2023</span></div>
       <div class="hero__mi"><span class="hero__ml">Fonti</span><span class="hero__mv">ISTAT · Mediobanca</span></div>
       <div class="hero__mi"><span class="hero__ml">Modello</span><span class="hero__mv">SAM · 63 settori</span></div>
-      <div class="hero__mi"><span class="hero__ml">Aggiornamento</span><span class="hero__mv">Marzo 2026</span></div>
+      <div class="hero__mi"><span class="hero__ml">Aggiornamento</span><span class="hero__mv">Aprile 2026</span></div>
     </div>
   </div>
 
@@ -440,12 +440,7 @@
         <div class="cb__num">Grafico 01</div>
         <div class="cb__title">Scomposizione degli impatti — Diretto, Indiretto, Indotto</div>
         <div class="cb__desc">PIL, Valore della Produzione e Occupazione per canale di trasmissione</div>
-        <div class="fl">
-          <i data-lucide="layout-grid" class="fl-icon"></i>
-          <div class="fl__tag">Flourish embed</div>
-          <div class="fl__title">Stacked bar — impatti per canale</div>
-        </div>
-      </div>
+        <iframe src='https://flo.uri.sh/visualisation/28421095/embed' title='Interactive or visual content' class='flourish-embed-iframe' frameborder='0' scrolling='no' style='width:100%;height:400px;' sandbox='allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation'></iframe>
     </div>
   </div>
 </section>
@@ -675,7 +670,7 @@
       <div class="c3" style="gap:2px;margin-bottom:32px;">
         <div class="ic">
           <div class="ic__icon"><i data-lucide="zap"></i></div>
-          <div class="ic__lbl">Moltiplicatore PIL</div>
+          <div class="ic__lbl">Moltiplicatore<br>PIL</div>
           <div class="ic__val">1,30</div>
           <div class="ic__desc">Ogni euro speso produce 1,30 € di PIL, in linea con la media della spesa pubblica nazionale</div>
         </div>
@@ -758,12 +753,7 @@
     <div class="cb__num">Grafico 06</div>
     <div class="cb__title">Diagramma di propagazione della spesa — flussi settoriali</div>
     <div class="cb__desc">Flussi dalla spesa A&D verso i settori della filiera e le catene di approvvigionamento, dall'agricoltura ai servizi sanitari</div>
-    <div class="fl" style="min-height:380px;">
-      <i data-lucide="git-branch" class="fl-icon"></i>
-      <div class="fl__tag">Flourish embed</div>
-      <div class="fl__title">Sankey / flow diagram — propagazione settoriale</div>
-      <div class="fl__desc">Flussi proporzionali al valore attivato per ogni settore destinatario</div>
-    </div>
+    <iframe src='https://flo.uri.sh/visualisation/28420845/embed' title='Interactive or visual content' class='flourish-embed-iframe' frameborder='0' scrolling='no' style='width:100%;height:1000px;' sandbox='allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation'></iframe>
   </div>
 </section>
 
