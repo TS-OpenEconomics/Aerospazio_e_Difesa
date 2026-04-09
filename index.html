@@ -132,7 +132,7 @@
     .insight { background: var(--lime); padding: 48px 64px; display: flex; align-items: center; gap: 32px; }
     .insight__bar { width: 4px; min-height: 72px; background: var(--blu-900); flex-shrink: 0; }
     .insight__label { font-family: var(--fm); font-size: 11px; letter-spacing: .16em; text-transform: uppercase; color: var(--blu-900); margin-bottom: 8px; }
-    .insight__text  { font-family: var(--fd); font-size: 22px; color: var(--blu-900); line-height: 1.45; max-width: 900px; }
+    .insight__text  { font-family: var(--fd); font-size: 22px; color: var(--blu-900); line-height: 1.45; }
 
     /* STEPS */
     .steps { display: flex; flex-direction: column; gap: 2px; }
@@ -317,8 +317,8 @@
   <ul class="nav__links">
     <li><a href="#impatti">Impatti</a></li>
     <li><a href="#takeaways">Evidenze principali</a></li>
-    <li><a href="#metodologia">Metodologia</a></li>
     <li><a href="#dettaglio">Impatto in dettaglio</a></li>
+    <li><a href="#metodologia">Metodologia</a></li>
       </ul>
 </nav>
 
@@ -553,92 +553,15 @@
 </section>
 
 
-<!-- ══════════════════════ METODOLOGIA ══════════════════════ -->
-<section class="s-dark" id="metodologia">
-  <div class="sh">
-    <div class="sh__bar"></div>
-    <div>
-      <div class="sh__tag">Approccio analitico</div>
-      <div class="sh__title">Natura dello studio e metodologia di analisi</div>
-    </div>
+
+<!-- ══════ INSIGHT ══════ -->
+<div class="insight">
+  <div class="insight__bar"></div>
+  <div>
+    <div class="insight__label">Risultato chiave</div>
+    <div class="insight__text">A parità di euro speso, il comparto genera <strong>22 volte l'impatto sulla R&amp;S</strong> e <strong>11 volte l'impatto sull'ICT</strong> rispetto al profilo medio di spesa pubblica italiana — con una quota di investimenti in R&amp;S al 21%, tre volte e mezzo la media nazionale del 6%. Il dettaglio settoriale che segue mostra come questi effetti si distribuiscono lungo tutta la filiera economica.</div>
   </div>
-
-  <div class="c2eq">
-    <div class="steps">
-      <div class="step">
-        <div class="step__n">01</div>
-        <div>
-          <h4>Modello SAM — Social Accounting Matrix</h4>
-          <p>Strumento riconosciuto a livello internazionale per la valutazione degli impatti economici e sociali. Configurato utilizzando dati ISTAT dell'economia italiana per l'anno di riferimento, con disaggregazione in 63 settori e disaggregazione territoriale a livello regionale.</p>
-        </div>
-      </div>
-      <div class="step">
-        <div class="step__n">02</div>
-        <div>
-          <h4>Shock di domanda</h4>
-          <p>Lo scenario di analisi utilizza come shock di domanda la spesa del comparto nel 2023 per l'acquisto di beni e servizi, così come costo del personale sul mercato nazionale. Gli impatti sono stimati in termini di contributo a PIL, Valore della Produzione, Occupazione, Redditi e Gettito fiscale.</p>
-        </div>
-      </div>
-      <div class="step">
-        <div class="step__n">03</div>
-        <div>
-          <h4>Tre canali di trasmissione</h4>
-          <p>Impatto <strong style="color:var(--lime)">diretto</strong> (fornitori primari di beni e servizi), <strong style="color:var(--lime)">indiretto</strong> (propagazione lungo le catene di sub-fornitura) e <strong style="color:var(--lime)">indotto</strong> (maggiore spesa di famiglie e imprese per incremento dei redditi).</p>
-        </div>
-      </div>
-      <div class="step">
-        <div class="step__n">04</div>
-        <div>
-          <h4>Perimetro della spesa — Mediobanca</h4>
-          <p>Punto di partenza: <a href="https://www.areastudimediobanca.com/it/product/report-difesa-sistema-difesa-nel-mondo-e-italia-ed-2024" target="_blank" rel="noopener" style="color:var(--lime);text-underline-offset:3px;">studio Area Studi Mediobanca (ed. 2024)</a> — perimetro di imprese del comparto con fatturato aggregato di circa 20 miliardi di euro. Dai settori ATECO corrispondenti sono stati rilevati da ISTAT i fatturati complessivi nazionali, le spese per il personale e gli acquisti di beni e servizi.</p>
-        </div>
-      </div>
-      <div class="step">
-        <div class="step__n">05</div>
-        <div>
-          <h4>Stima della destinazione della spesa</h4>
-          <p>Utilizzo dei dati ISTAT sugli investimenti fissi lordi in attività non finanziarie degli stessi settori per stimare i settori in cui le spese vengono effettivamente sostenute. Calcolo della quota specifica di spesa in personale e beni/servizi attribuibile alle imprese aerospaziali, distinguendo tra componente civile e militare.</p>
-        </div>
-      </div>
-      <div class="step">
-        <div class="step__n">06</div>
-        <div>
-          <h4>Nota metodologica</h4>
-          <p>Gli impatti stimati descrivono gli effetti della spesa in condizioni di ceteris paribus, con le assunzioni tipiche dei modelli di contabilità sociale. Il PIL misura la ricchezza effettivamente generata, evitando duplicazioni tipiche del Valore della Produzione. Per maggiori dettagli consultare la Nota Metodologica integrale.</p>
-        </div>
-      </div>
-
-      <a href="OE_A&D_NOTA_METODOLOGICA.pdf" 
-        target="_blank" 
-        rel="noopener" 
-        class="dl-btn"
-        <svg class="dl-icon" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-        <span>Scarica la Nota Metodologica</span>
-      </a>
-    </div>
-
-    <div class="tx tx--d">
-      <h3>Analisi della spesa complessiva del comparto</h3>
-      <p>Per alimentare correttamente il modello di impatto macroeconomico, è stata condotta un'analisi preliminare approfondita della struttura della spesa del comparto, partendo dal perimetro complessivo della spesa militare, per poi arrivare all'isolamento della sola spesa di competenza dei settori di Aerospazio &amp; Difesa.</p>
-      <p>Al fine di quantificare la spesa generata dal tessuto produttivo italiano attribuibile al comparto, l'analisi si è concentrata esclusivamente sulla <strong>componente privata</strong> (grandi imprese e PMI), comprendendo anche gli investimenti pubblici ed escludendo le spese correnti della Pubblica Amministrazione in ambito difesa (quali il costo del personale militare, dei Carabinieri, della Polizia di Stato e altre voci di spesa pubblica diretta).</p>
-      <p>Poiché tali settori rappresentano la provenienza della spesa (i comparti in cui le imprese sostengono i costi) e non necessariamente la destinazione finale delle risorse, si è proceduto a stimare i settori in cui le spese vengono effettivamente sostenute, utilizzando i dati ISTAT sugli investimenti fissi lordi in attività non finanziarie relativi agli stessi settori.</p>
-
-      <div class="hlb">
-        <div class="hlb__bar"></div>
-        <div class="hlb__tx">La realizzazione degli effetti moltiplicativi dipende in misura rilevante dal <strong>perimetro complessivo della spesa</strong>, dal livello di contenuto domestico o europeo delle produzioni e dalla capacità di coordinamento degli investimenti (<a href="https://www.bancaditalia.it/pubblicazioni/altri-atti-convegni/2025-public-finance/5.1-Juarros.pdf" target="_blank" rel="noopener" style="color:inherit;text-decoration:underline;text-underline-offset:3px;">IMF settembre 2025</a>; <a href="https://www.dnb.nl/media/gpblafnt/the-economic-consequences-of-defence-spending-feb-2026.pdf" target="_blank" rel="noopener" style="color:inherit;text-decoration:underline;text-underline-offset:3px;">DNB febbraio 2026</a>).</div>
-      </div>
-
-      <div class="cb cb--light" style="background:var(--grey-light);padding:24px 32px;margin-top:24px;">
-        <div class="cb__num">Grafico 03</div>
-        <div class="cb__title">Settori principali di spesa del comparto — 2023</div>
-        <div class="cb__desc">Distribuzione percentuale della spesa per categoria: mezzi di trasporto, ICT, R&amp;S, costruzioni, servizi professionali, altri</div>
-        <iframe src='https://flo.uri.sh/visualisation/28426017/embed' title='Interactive or visual content' class='flourish-embed-iframe' frameborder='0' scrolling='no' style='width:100%;height:250px;' sandbox='allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation'></iframe>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
+</div>
 
 <!-- ══════════════════ IMPATTO IN DETTAGLIO ══════════════════ -->
 <section class="s-light" id="dettaglio">
@@ -774,6 +697,93 @@
     <div class="insight__text">Il settore concentra Valore Aggiunto e occupazione qualificata nei settori ad alta innovazione (R&S, ICT, trasporti avanzati), attiva filiere tecniche strategiche e produce effetti diffusi su comparti di servizi e consumi familiari — confermando il suo ruolo di elemento rilevante per la struttura economica italiana in termini di innovazione tecnologica, qualificazione del lavoro e diffusione degli effetti economici sul territorio.</div>
   </div>
 </div>
+
+
+<!-- ══════════════════════ METODOLOGIA ══════════════════════ -->
+<section class="s-dark" id="metodologia">
+  <div class="sh">
+    <div class="sh__bar"></div>
+    <div>
+      <div class="sh__tag">Approccio analitico</div>
+      <div class="sh__title">Natura dello studio e metodologia di analisi</div>
+    </div>
+  </div>
+
+  <div class="c2eq">
+    <div class="steps">
+      <div class="step">
+        <div class="step__n">01</div>
+        <div>
+          <h4>Modello SAM — Social Accounting Matrix</h4>
+          <p>Strumento riconosciuto a livello internazionale per la valutazione degli impatti economici e sociali. Configurato utilizzando dati ISTAT dell'economia italiana per l'anno di riferimento, con disaggregazione in 63 settori e disaggregazione territoriale a livello regionale.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step__n">02</div>
+        <div>
+          <h4>Shock di domanda</h4>
+          <p>Lo scenario di analisi utilizza come shock di domanda la spesa del comparto nel 2023 per l'acquisto di beni e servizi, così come costo del personale sul mercato nazionale. Gli impatti sono stimati in termini di contributo a PIL, Valore della Produzione, Occupazione, Redditi e Gettito fiscale.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step__n">03</div>
+        <div>
+          <h4>Tre canali di trasmissione</h4>
+          <p>Impatto <strong style="color:var(--lime)">diretto</strong> (fornitori primari di beni e servizi), <strong style="color:var(--lime)">indiretto</strong> (propagazione lungo le catene di sub-fornitura) e <strong style="color:var(--lime)">indotto</strong> (maggiore spesa di famiglie e imprese per incremento dei redditi).</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step__n">04</div>
+        <div>
+          <h4>Perimetro della spesa — Mediobanca</h4>
+          <p>Punto di partenza: <a href="https://www.areastudimediobanca.com/it/product/report-difesa-sistema-difesa-nel-mondo-e-italia-ed-2024" target="_blank" rel="noopener" style="color:var(--lime);text-underline-offset:3px;">studio Area Studi Mediobanca (ed. 2024)</a> — perimetro di imprese del comparto con fatturato aggregato di circa 20 miliardi di euro. Dai settori ATECO corrispondenti sono stati rilevati da ISTAT i fatturati complessivi nazionali, le spese per il personale e gli acquisti di beni e servizi.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step__n">05</div>
+        <div>
+          <h4>Stima della destinazione della spesa</h4>
+          <p>Utilizzo dei dati ISTAT sugli investimenti fissi lordi in attività non finanziarie degli stessi settori per stimare i settori in cui le spese vengono effettivamente sostenute. Calcolo della quota specifica di spesa in personale e beni/servizi attribuibile alle imprese aerospaziali, distinguendo tra componente civile e militare.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step__n">06</div>
+        <div>
+          <h4>Nota metodologica</h4>
+          <p>Gli impatti stimati descrivono gli effetti della spesa in condizioni di ceteris paribus, con le assunzioni tipiche dei modelli di contabilità sociale. Il PIL misura la ricchezza effettivamente generata, evitando duplicazioni tipiche del Valore della Produzione. Per maggiori dettagli consultare la Nota Metodologica integrale.</p>
+        </div>
+      </div>
+
+      <a href="OE_A&D_NOTA_METODOLOGICA.pdf" 
+        target="_blank" 
+        rel="noopener" 
+        class="dl-btn"
+        <svg class="dl-icon" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+        <span>Scarica la Nota Metodologica</span>
+      </a>
+    </div>
+
+    <div class="tx tx--d">
+      <h3>Analisi della spesa complessiva del comparto</h3>
+      <p>Per alimentare correttamente il modello di impatto macroeconomico, è stata condotta un'analisi preliminare approfondita della struttura della spesa del comparto, partendo dal perimetro complessivo della spesa militare, per poi arrivare all'isolamento della sola spesa di competenza dei settori di Aerospazio &amp; Difesa.</p>
+      <p>Al fine di quantificare la spesa generata dal tessuto produttivo italiano attribuibile al comparto, l'analisi si è concentrata esclusivamente sulla <strong>componente privata</strong> (grandi imprese e PMI), comprendendo anche gli investimenti pubblici ed escludendo le spese correnti della Pubblica Amministrazione in ambito difesa (quali il costo del personale militare, dei Carabinieri, della Polizia di Stato e altre voci di spesa pubblica diretta).</p>
+      <p>Poiché tali settori rappresentano la provenienza della spesa (i comparti in cui le imprese sostengono i costi) e non necessariamente la destinazione finale delle risorse, si è proceduto a stimare i settori in cui le spese vengono effettivamente sostenute, utilizzando i dati ISTAT sugli investimenti fissi lordi in attività non finanziarie relativi agli stessi settori.</p>
+
+      <div class="hlb">
+        <div class="hlb__bar"></div>
+        <div class="hlb__tx">La realizzazione degli effetti moltiplicativi dipende in misura rilevante dal <strong>perimetro complessivo della spesa</strong>, dal livello di contenuto domestico o europeo delle produzioni e dalla capacità di coordinamento degli investimenti (<a href="https://www.bancaditalia.it/pubblicazioni/altri-atti-convegni/2025-public-finance/5.1-Juarros.pdf" target="_blank" rel="noopener" style="color:inherit;text-decoration:underline;text-underline-offset:3px;">IMF settembre 2025</a>; <a href="https://www.dnb.nl/media/gpblafnt/the-economic-consequences-of-defence-spending-feb-2026.pdf" target="_blank" rel="noopener" style="color:inherit;text-decoration:underline;text-underline-offset:3px;">DNB febbraio 2026</a>).</div>
+      </div>
+
+      <div class="cb cb--light" style="background:var(--grey-light);padding:24px 32px;margin-top:24px;">
+        <div class="cb__num">Grafico 03</div>
+        <div class="cb__title">Settori principali di spesa del comparto — 2023</div>
+        <div class="cb__desc">Distribuzione percentuale della spesa per categoria: mezzi di trasporto, ICT, R&amp;S, costruzioni, servizi professionali, altri</div>
+        <iframe src='https://flo.uri.sh/visualisation/28426017/embed' title='Interactive or visual content' class='flourish-embed-iframe' frameborder='0' scrolling='no' style='width:100%;height:250px;' sandbox='allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation'></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 
 
