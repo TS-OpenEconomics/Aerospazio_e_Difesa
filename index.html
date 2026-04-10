@@ -80,15 +80,15 @@
     .hero__cap strong { color: var(--lime); }
 
     /* SECTIONS */
-    .s-dark  { background: var(--blu-900); padding: 72px 64px; }
-    .s-light { background: var(--white);   padding: 72px 64px; }
-    .s-grey  { background: var(--grey-light); padding: 72px 64px; }
+    .s-dark  { background: var(--blu-900); padding: 104px 64px 72px; }
+    .s-light { background: var(--white);   padding: 104px 64px 72px; }
+    .s-grey  { background: var(--grey-light); padding: 104px 64px 72px; }
 
     /* SECTION HEADER */
     .sh { display: flex; align-items: center; gap: 16px; margin-bottom: 48px; }
     .sh__bar { width: 4px; height: 40px; background: var(--lime); flex-shrink: 0; }
     .sh__tag { font-family: var(--fm); font-size: 16px; letter-spacing: .16em; text-transform: uppercase; color: var(--blu-700); margin-bottom: 4px; }
-    .sh__title { font-family: var(--fd); font-weight: 400; font-size: 29px; color: var(--black); }
+    .sh__title { font-family: var(--fd); font-weight: 400; font-size: 36px; color: var(--black); }
     .s-dark .sh__tag   { color: var(--lime); }
     .s-dark .sh__title { color: var(--white); }
 
@@ -185,7 +185,7 @@
     .dl-icon { width: 18px; height: 18px; stroke: currentColor; fill: none; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; flex-shrink: 0; }
 
     /* SUB TITLE */
-    .stitle { font-family: var(--fd); font-weight: 400; font-size: 23px; color: var(--black); margin: 48px 0 24px; padding-bottom: 12px; border-bottom: 2px solid var(--grey-mid); }
+    .stitle { font-family: var(--fd); font-weight: 400; font-size: 28px; color: var(--black); margin: 80px 0 28px; padding-bottom: 14px; border-bottom: 2px solid var(--grey-mid); }
     .s-dark .stitle { color: var(--white); border-bottom-color: var(--blu-800); }
 
     /* SPACERS */
@@ -326,9 +326,9 @@
 <nav class="toc">
   <div class="toc__dot active" data-label="Intro"           data-s="hero"        onclick="navTo('hero')"></div>
   <div class="toc__dot"       data-label="Impatti"          data-s="impatti"     onclick="navTo('impatti')"></div>
-  <div class="toc__dot"       data-label="Approfondimento"    data-s="takeaways"   onclick="navTo('takeaways')"></div>
+  <div class="toc__dot"       data-label="Approfondimento"  data-s="takeaways"   onclick="navTo('takeaways')"></div>
+  <div class="toc__dot"       data-label="Dettagli"         data-s="dettaglio"   onclick="navTo('dettaglio')"></div>
   <div class="toc__dot"       data-label="Metodologia"      data-s="metodologia" onclick="navTo('metodologia')"></div>
-  <div class="toc__dot"       data-label="Dettagli" data-s="dettaglio"  onclick="navTo('dettaglio')"></div>
 </nav>
 
 
@@ -441,7 +441,7 @@
     <div class="insight__bar"></div>
     <div>
       <div class="insight__label">Sintesi dei risultati dello studio</div>
-      <div class="insight__text">Il settore Aerospazio &amp; Difesa vale molto più di quanto il PIL misuri. Genera valore economico diffuso lungo tutta la filiera produttiva italiana, concentra innovazione nei settori tecnologicamente più avanzati con un’intensità senza pari rispetto alla spesa pubblica media, e produce redditi sufficientemente stabili da sostenere la domanda interna fino al mercato immobiliare residenziale. Soprattutto, è l’unico comparto in cui la spesa pubblica produce simultaneamente rendimento economico, avanzamento tecnologico e sicurezza nazionale — tre obiettivi che nessun’altra voce di bilancio è in grado di perseguire con la stessa efficienza sistemica.</div>
+      <div class="insight__text">Il settore Aerospazio &amp; Difesa vale molto più di quanto il PIL misuri. Genera valore economico diffuso lungo tutta la filiera produttiva italiana, concentra innovazione nei settori tecnologicamente più avanzati con un’intensità senza pari rispetto alla spesa pubblica media, e produce redditi sufficientemente stabili da sostenere la domanda interna fino al mercato immobiliare residenziale. Soprattutto, è l’unico comparto in cui la spesa pubblica produce simultaneamente rendimento economico, avanzamento tecnologico e sicurezza nazionale: tre obiettivi che nessun’altra voce di bilancio è in grado di perseguire con la stessa efficienza sistemica.</div>
     </div>
   </div>
 
@@ -454,7 +454,7 @@
       <p>Dall’analisi dei dati di spesa disponibili più recenti (anno 2023) emerge come il settore Aerospazio &amp; Difesa rappresenti un <strong>motore economico strutturale</strong> per il nostro Paese, in grado di generare benessere diffuso grazie alla sua capacità di attivare filiere produttive diversificate e propagare i suoi effetti in molteplici comparti e territori.</p>
       <p>La spesa del settore, pari a <strong>17,7 miliardi di euro</strong> nel 2023, non resta confinata all’interno del settore ma si trasmette ai fornitori dell’indotto, contribuendo in modo rilevante alla creazione di Valore Aggiunto delle numerose attività collegate (per quasi <strong>23 miliardi annui di PIL</strong>), sostenendo l’occupazione per oltre <strong>292 mila posti di lavoro stabili a tempo pieno</strong> e generando redditi delle famiglie per oltre <strong>22,3 miliardi</strong>. Oltre alle imposte direttamente pagate dalle imprese attive nel comparto, la sua spesa genera un gettito fiscale che ha superato nel 2023 i <strong>6 miliardi</strong>.</p>
       <p>Il <strong>moltiplicatore del PIL</strong>, pari a <strong>1,3</strong>, si allinea alla media della spesa pubblica italiana: ogni euro investito restituisce <strong>1,3 euro di prodotto interno lordo</strong>. Sarebbe tuttavia un errore interpretare questo indicatore come rappresentativo della capacità complessiva del settore di generare valore per il Paese. Il moltiplicatore convenzionale cattura esclusivamente gli effetti di domanda a breve termine, lasciando fuori dalla misura ciò che rende l’Aerospazio &amp; Difesa un comparto <strong>strategicamente irriproducibile</strong>: la sua capacità di generare progresso tecnologico con ricadute sistemiche sull’intera economia.</p>
-      <p>La ricerca accademica ha documentato con rigore questo divario tra valore misurato e valore reale. Uno studio pubblicato dalla <a href="https://direct.mit.edu/rest/article/107/1/14/114751/The-Intellectual-Spoils-of-War-Defense-R-amp-D"" target="_blank" rel="noopener" style="color:inherit;text-decoration:underline;text-underline-offset:3px;"><em>Review of Economics and Statistics</em></a> del MIT (Moretti, Steinwender e Van Reenen, 2025) dimostra che un incremento del <strong>10% nella R&amp;S finanziata dalla difesa</strong> produce un aumento del <strong>4% nella R&amp;S privata</strong> <a href="https://cepr.org/voxeu/columns/intellectual-spoils-war-how-government-spending-defence-research-benefits-private" target="_blank" rel="noopener" style="color:inherit;text-decoration:underline;text-underline-offset:3px;">CEPR</a> — un effetto di <strong>crowding-in</strong> che amplifica la frontiera tecnologica ben oltre i confini del settore. Il rendimento effettivo della R&amp;S in ambito difesa è stimato tra <strong>8 e 9 volte</strong> l’investimento iniziale in termini di PIL aggiuntivo generato, contro un moltiplicatore di <strong>1,5–1,7</strong> per la R&amp;S civile <a href="https://www.suerf.org/publications/suerf-policy-notes-and-briefs/the-economic-returns-on-defense-rd/" target="_blank" rel="noopener" style="color:inherit;text-decoration:underline;text-underline-offset:3px;">(fonte)</a>: un divario che riflette la natura trasformativa — non incrementale — delle sfide tecnologiche che la difesa è chiamata ad affrontare.</p>
+      <p>La ricerca accademica ha documentato con rigore questo divario tra valore misurato e valore reale. Uno studio pubblicato dalla <a href="https://direct.mit.edu/rest/article/107/1/14/114751/The-Intellectual-Spoils-of-War-Defense-R-amp-D"" target="_blank" rel="noopener" style="color:inherit;text-decoration:underline;text-underline-offset:3px;"><em>Review of Economics and Statistics</em></a> del MIT (Moretti, Steinwender e Van Reenen, 2025) dimostra che un incremento del <strong>10% nella R&amp;S finanziata dalla difesa</strong> produce un aumento del <strong>4% nella R&amp;S privata</strong> <a href="https://cepr.org/voxeu/columns/intellectual-spoils-war-how-government-spending-defence-research-benefits-private" target="_blank" rel="noopener" style="color:inherit;text-decoration:underline;text-underline-offset:3px;">CEPR</a>, un effetto di <strong>crowding-in</strong> che amplifica la frontiera tecnologica ben oltre i confini del settore. Il rendimento effettivo della R&amp;S in ambito difesa è stimato tra <strong>8 e 9 volte</strong> l’investimento iniziale in termini di PIL aggiuntivo generato, contro un moltiplicatore di <strong>1,5–1,7</strong> per la R&amp;S civile <a href="https://www.suerf.org/publications/suerf-policy-notes-and-briefs/the-economic-returns-on-defense-rd/" target="_blank" rel="noopener" style="color:inherit;text-decoration:underline;text-underline-offset:3px;">(fonte)</a>: un divario che riflette la natura trasformativa, non incrementale, delle sfide tecnologiche che la difesa è chiamata ad affrontare.</p>
     </div>
 
     <div>
@@ -467,7 +467,7 @@
     </div>
 
       <div class="tx" style="margin-top:32px;">
-        <p>Il Kiel Institute ha del resto documentato come le tecnologie <strong>dual use</strong> nate dagli investimenti militari — dal radar a internet — abbiano ridisegnato tanto la sicurezza quanto la vita civile <a href="https://www.asd-europe.org/news-media/news-events/news/recent-report-on-defence-spending-and-economic-growth-innovation/" target="_blank" rel="noopener" style="color:inherit;text-decoration:underline;text-underline-offset:3px;">ASD-Europe</a>, e che rinunciare a investire domesticamente in questo settore privi le industrie nazionali degli spillover tecnologici che solo la prossimità alla frontiera della ricerca può generare. A questi ritorni economici di lungo periodo si aggiunge una dimensione che nessun moltiplicatore può catturare: il valore della <strong>sicurezza nazionale</strong>. La capacità di garantire l’<strong>autonomia strategica</strong> del Paese — nella gestione dello spazio aereo, nella protezione delle infrastrutture critiche, nella deterrenza — è un bene pubblico il cui costo, se non prodotto internamente, ricade sulla dipendenza da fornitori esteri con conseguenze militari, tecnologiche e politiche difficilmente quantificabili ma sistemicamente rilevanti.</p>
+        <p>Il Kiel Institute ha del resto documentato come le tecnologie <strong>dual use</strong> nate dagli investimenti militari, dal radar a internet, abbiano ridisegnato tanto la sicurezza quanto la vita civile <a href="https://www.asd-europe.org/news-media/news-events/news/recent-report-on-defence-spending-and-economic-growth-innovation/" target="_blank" rel="noopener" style="color:inherit;text-decoration:underline;text-underline-offset:3px;">ASD-Europe</a>, e che rinunciare a investire domesticamente in questo settore privi le industrie nazionali degli spillover tecnologici che solo la prossimità alla frontiera della ricerca può generare. A questi ritorni economici di lungo periodo si aggiunge una dimensione che nessun moltiplicatore può catturare: il valore della <strong>sicurezza nazionale</strong>. La capacità di garantire l’<strong>autonomia strategica</strong> del Paese, nella gestione dello spazio aereo, nella protezione delle infrastrutture critiche e nella deterrenza, è un bene pubblico il cui costo, se non prodotto internamente, ricade sulla dipendenza da fornitori esteri con conseguenze militari, tecnologiche e politiche difficilmente quantificabili ma sistemicamente rilevanti.</p>
       </div>
     </div>
 
@@ -481,7 +481,7 @@
   <div class="insight__bar"></div>
   <div>
     <div class="insight__label">Messaggio chiave #1</div>
-    <div class="insight__text">La spesa del settore Aerospazio e Difesa nel 2023 pari a 17,7 miliardi di euro attiva quasi 23 miliardi di PIL, oltre 292 mila posti di lavoro e 6,3 miliardi di gettito fiscale. L’impatto macroeconomico rappresenta però solo una delle tre componenti di rendimento del settore per il Paese. In aggiunta vanno infatti considerati gli spillover tecnologici che alimentano la produttività dell'intero sistema-Italia, e il contributo insostituibile alla sovranità e alla resilienza nazionale.</div>
+    <div class="insight__text">La spesa del settore Aerospazio e Difesa nel 2023, pari a 17,7 miliardi di euro, attiva quasi 23 miliardi di PIL, oltre 292 mila posti di lavoro e 6,3 miliardi di gettito fiscale. L’impatto macroeconomico rappresenta però solo una delle tre componenti di rendimento del settore per il Paese. In aggiunta vanno infatti considerati gli spillover tecnologici che alimentano la produttività dell'intero sistema-Italia, e il contributo insostituibile alla sovranità e alla resilienza nazionale.</div>
   </div>
 </div>
 
@@ -492,7 +492,7 @@
     <div class="sh__bar"></div>
     <div>
       <div class="sh__tag">Approfondimento</div>
-      <div class="sh__title">Il comparto a confronto </div>
+      <div class="sh__title">Il comparto a confronto</div>
     </div>
   </div>
 
@@ -574,8 +574,8 @@
 <div class="insight">
   <div class="insight__bar"></div>
   <div>
-    <div class="insight__label">Messagio chiave #2</div>
-    <div class="insight__text">A parità di spesa, l'Aerospazio & Difesa attiva 22 volte più R&S e 11 volte più ICT rispetto alla media pubblica italiana. Con il 21% degli investimenti destinato alla ricerca — contro una media nazionale del 6% — il settore è il principale motore di innovazione sistemica del Paese, con ricadute tecnologiche che attraversano trasversalmente l'economia civile.</div>
+    <div class="insight__label">Messaggio chiave #2</div>
+    <div class="insight__text">A parità di spesa, l'Aerospazio & Difesa attiva 22 volte più R&S e 11 volte più ICT rispetto alla media pubblica italiana. Con il 21% degli investimenti destinato alla ricerca, contro una media nazionale del 6%, il settore è il principale motore di innovazione sistemica del Paese, con ricadute tecnologiche che attraversano trasversalmente l'economia civile.</div>
   </div>
 </div>
 
@@ -641,7 +641,7 @@
   <div class="c2">
     <div class="tx">
       <h3>Analisi della propagazione degli effetti</h3>
-      <p>La spesa del comparto può essere letta come uno <strong>shock di domanda</strong> di beni e servizi che attiva capacità produttiva lungo la filiera e genera un impatto positivo sulle principali dimensioni dell'economia. In termini operativi, ogni euro speso non produce effetti solo all'interno del settore, ma si trasmette ai fornitori, ai sub-fornitori e, attraverso i redditi generati, a una parte più ampia del sistema economico. La propagazione di questi effetti non è lineare né uniforme: dipende dalla struttura della filiera, dal grado di integrazione delle imprese nazionali nella catena del valore e dalla quota di spesa che rimane all'interno del sistema produttivo italiano piuttosto che disperdersi verso fornitori esteri. È proprio la capacità di trattenere valore lungo la filiera domestica — e di amplificarlo attraverso successivi cicli di spesa e investimento — a determinare la reale portata dell'impatto economico complessivo del comparto.</p>
+      <p>La spesa del comparto può essere letta come uno <strong>shock di domanda</strong> di beni e servizi che attiva capacità produttiva lungo la filiera e genera un impatto positivo sulle principali dimensioni dell'economia. In termini operativi, ogni euro speso non produce effetti solo all'interno del settore, ma si trasmette ai fornitori, ai sub-fornitori e, attraverso i redditi generati, a una parte più ampia del sistema economico. La propagazione di questi effetti non è lineare né uniforme: dipende dalla struttura della filiera, dal grado di integrazione delle imprese nazionali nella catena del valore e dalla quota di spesa che rimane all'interno del sistema produttivo italiano piuttosto che disperdersi verso fornitori esteri. È proprio la capacità di trattenere valore lungo la filiera domestica, amplificandolo attraverso successivi cicli di spesa e investimento, a determinare la reale portata dell'impatto economico complessivo del comparto.</p>
 
       <div class="stitle" style="margin-top:32px;">Le tre componenti dell'impatto</div>
       <div class="nlist">
@@ -694,7 +694,7 @@
 
       <div class="ch1">
         <div class="cb" style="background:var(--grey-light);padding:24px 32px;">
-          <div class="cb__num">Grafico 04</div>
+          <div class="cb__num">Grafico 03</div>
           <div class="cb__title">Scomposizione degli impatti</div>
           <div class="cb__desc">PIL, Valore della Produzione, Occupazione e Redditi per canale di trasmissione</div>
           <iframe src='https://flo.uri.sh/visualisation/28426426/embed' title='Interactive or visual content' class='flourish-embed-iframe' frameborder='0' scrolling='no' style='width:100%;height:270px;' sandbox='allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation'></iframe>
@@ -712,19 +712,21 @@
   <div class="c2">
     <div class="tx">
       <p>L’impatto economico del settore Aerospazio &amp; Difesa non si esaurisce all’interno dei suoi confini produttivi diretti, ma si propaga lungo una <strong>filiera ampia e articolata</strong>, generando valore in comparti apparentemente distanti. Un aspetto rilevante di questa diffusione è che i settori che assorbono la maggiore quota di produzione non coincidono necessariamente con quelli che catturano il maggior <strong>Valore Aggiunto</strong> o generano il più alto impatto occupazionale: la distribuzione dei benefici segue logiche diverse a seconda che si misuri la capacità di attivare produzione, di creare ricchezza netta o di sostenere posti di lavoro.</p>
-      <p>In termini di contributo al <strong>PIL</strong>, il settore dominante è la <strong>Ricerca e Sviluppo</strong>, che beneficia direttamente delle ingenti spese in innovazione, brevetti e know-how tecnologico tipiche del comparto. Sul fronte del <strong>Valore della Produzione</strong>, emerge invece il settore degli <strong>altri mezzi di trasporto</strong> — che comprende componentistica aerospaziale, navale e terrestre ad alta tecnologia — a conferma della profondità della filiera manifatturiera attivata. Per quanto riguarda l’<strong>Occupazione</strong>, è il settore <strong>ICT</strong> a guidare la classifica, seguito da R&amp;S e trasporti avanzati: un segnale chiaro di come la spesa in difesa e aerospazio alimenti in misura determinante l’ecosistema dell’innovazione digitale e tecnologica del Paese.</p>
-      <p>Un risultato particolarmente significativo — e a prima lettura controintuitivo — riguarda il settore <strong>immobiliare</strong>, che si colloca tra i comparti più impattati pur non intrattenendo alcun legame strutturale diretto con l’Aerospazio &amp; Difesa: <strong>secondo per contributo al PIL</strong> e <strong>quarto per Valore della Produzione</strong>. La sua presenza prominente in graduatoria non riflette un collegamento produttivo tra i due settori, ma è interamente riconducibile al meccanismo degli <strong>effetti indotti sui redditi delle famiglie</strong>. Il settore immobiliare — che comprende affitti, mutui e spese abitative — rappresenta storicamente una delle voci di spesa più rilevanti nel paniere di consumo delle famiglie italiane. Di conseguenza, i redditi da lavoro generati direttamente e indirettamente dalla spesa del comparto Aerospazio &amp; Difesa si traducono in modo naturale in una domanda sostenuta di servizi abitativi. In altri termini, è la capacità del settore di creare <strong>occupazione qualificata e ben retribuita</strong> — e quindi redditi familiari stabili e significativi — a spiegare l’impatto sull’immobiliare, non una relazione di fornitura o committenza tra i due comparti.</p>
-      <p>Nel complesso, l’analisi della diffusione settoriale restituisce un’immagine coerente con la natura del settore: da un lato, una <strong>concentrazione di Valore Aggiunto e occupazione qualificata</strong> nei settori ad alta intensità di innovazione — <strong>R&amp;S, ICT, trasporti avanzati</strong> — che costituiscono il nucleo tecnologico della filiera; dall’altro, una propagazione capillare degli effetti verso comparti di servizi e consumi familiari, tra cui appunto l’immobiliare. È questa duplice capacità — di alimentare la frontiera tecnologica e al contempo di sostenere la domanda interna — a rendere l’Aerospazio &amp; Difesa un <strong>moltiplicatore economico sistemico</strong>, i cui effetti attraversano trasversalmente l’intera struttura produttiva del Paese.</p>
+      <p>In termini di contributo al <strong>PIL</strong>, il settore dominante è la <strong>Ricerca e Sviluppo</strong>, che beneficia direttamente delle ingenti spese in innovazione, brevetti e know-how tecnologico tipiche del comparto. Sul fronte del <strong>Valore della Produzione</strong>, emerge invece il settore degli <strong>altri mezzi di trasporto</strong>, che comprende componentistica aerospaziale, navale e terrestre ad alta tecnologia, a conferma della profondità della filiera manifatturiera attivata. Per quanto riguarda l’<strong>Occupazione</strong>, è il settore <strong>ICT</strong> a guidare la classifica, seguito da R&amp;S e trasporti avanzati: un segnale chiaro di come la spesa in difesa e aerospazio alimenti in misura determinante l’ecosistema dell’innovazione digitale e tecnologica del Paese.</p>
+      <p>Un risultato particolarmente significativo, e a prima lettura controintuitivo, riguarda il settore <strong>immobiliare</strong>, che si colloca tra i comparti più impattati pur non intrattenendo alcun legame strutturale diretto con l’Aerospazio &amp; Difesa: <strong>secondo per contributo al PIL</strong> e <strong>quarto per Valore della Produzione</strong>. La sua presenza prominente in graduatoria non riflette un collegamento produttivo tra i due settori, ma è interamente riconducibile al meccanismo degli <strong>effetti indotti sui redditi delle famiglie</strong>. Il settore immobiliare, che comprende affitti, mutui e spese abitative, rappresenta storicamente una delle voci di spesa più rilevanti nel paniere di consumo delle famiglie italiane. Di conseguenza, i redditi da lavoro generati direttamente e indirettamente dalla spesa del comparto Aerospazio &amp; Difesa si traducono in modo naturale in una domanda sostenuta di servizi abitativi. In altri termini, è la capacità del settore di creare <strong>occupazione qualificata e ben retribuita</strong>, e quindi redditi familiari stabili e significativi, a spiegare l’impatto sull’immobiliare, non una relazione di fornitura o committenza tra i due comparti.</p>
     </div>
 
     <div>
       <div class="cb" style="background:var(--grey-light);padding:24px 32px;margin-bottom:32px;">
-        <div class="cb__num">Grafico 05</div>
+        <div class="cb__num">Grafico 04</div>
         <div class="cb__title">Primi 20 settori per PIL, Valore della Produzione e Occupazione — 2023</div>
         <div class="cb__desc">Confronto multidimensionale sui tre indicatori</div>
-        <iframe src='https://flo.uri.sh/visualisation/28426575/embed' title='Interactive or visual content' class='flourish-embed-iframe' frameborder='0' scrolling='no' style='width:100%;height:600px;' sandbox='allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation'></iframe>
+        <iframe src='https://flo.uri.sh/visualisation/28426575/embed' title='Interactive or visual content' class='flourish-embed-iframe' frameborder='0' scrolling='no' style='width:100%;height:700px;' sandbox='allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation'></iframe>
       </div>
     </div>
+  </div>
+  <div class="tx" style="margin-top:16px;">
+    <p>Nel complesso, l’analisi della diffusione settoriale restituisce un’immagine coerente con la natura del settore: da un lato, una <strong>concentrazione di Valore Aggiunto e occupazione qualificata</strong> nei settori ad alta intensità di innovazione, <strong>R&amp;S, ICT e trasporti avanzati</strong>, che costituiscono il nucleo tecnologico della filiera; dall’altro, una propagazione capillare degli effetti verso comparti di servizi e consumi familiari, tra cui appunto l’immobiliare. È questa duplice capacità, di alimentare la frontiera tecnologica e al contempo di sostenere la domanda interna, a rendere l’Aerospazio &amp; Difesa un <strong>moltiplicatore economico sistemico</strong>, i cui effetti attraversano trasversalmente l’intera struttura produttiva del Paese.</p>
   </div>
 
   <div class="sp48"></div>
@@ -733,19 +735,19 @@
     <div class="insight__bar"></div>
     <div>
       <div class="insight__label">Messaggio chiave #3</div>
-      <div class="insight__text">La spesa in Aerospazio &amp; Difesa non produce un impatto puntuale ma <strong>sistemico</strong>: attiva la filiera tecnologica — <strong>R&amp;S, ICT, trasporti avanzati</strong> — e, attraverso i redditi generati, alimenta consumi e servizi in comparti lontani dalla difesa. La distribuzione dei benefici attraversa trasversalmente l’economia italiana, dal laboratorio di ricerca al mercato immobiliare residenziale.</div>
+      <div class="insight__text">La spesa in Aerospazio &amp; Difesa non produce un impatto puntuale ma <strong>sistemico</strong>: attiva la filiera tecnologica: <strong>R&amp;S, ICT, trasporti avanzati</strong>, e attraverso i redditi generati alimenta consumi e servizi in comparti lontani dalla difesa. La distribuzione dei benefici attraversa trasversalmente l’economia italiana, dal laboratorio di ricerca al mercato immobiliare residenziale.</div>
     </div>
   </div>
 
   <!-- Propagazione della spesa -->
   <div class="stitle">Propagazione della spesa lungo le filiere produttive</div>
   <div class="tx" style="margin-bottom:24px;">
-    <p>Il diagramma illustra la <strong>propagazione della spesa del comparto nell’economia italiana</strong>, mappando i flussi che si generano a partire dai settori direttamente attivati fino ai comparti raggiunti in via indiretta lungo la catena di fornitura. La lettura del grafico è immediata: a sinistra si collocano i <strong>settori di spesa primaria</strong> — mezzi di trasporto, elettronica, informatica, ricerca e sviluppo, consulenze, telecomunicazioni — mentre a destra si dispiegano i comparti della filiera attivata, in un ventaglio che copre l’intera struttura produttiva italiana.</p>
-    <p>Ciò che il diagramma rende visivamente evidente è la <strong>straordinaria ampiezza della propagazione</strong>: la spesa del comparto non si concentra in pochi settori contigui, ma si diffonde capillarmente attraverso decine di comparti, che spaziano dalla manifattura avanzata — metallurgia, gomma e plastica, apparecchiature elettriche — ai servizi professionali e finanziari, dall’energia e raffinazione alle attività immobiliari, fino a settori di consumo finale come l’industria alimentare, l’istruzione e i servizi personali. Questa ampiezza non è casuale: riflette la struttura <strong>intrinsecamente trasversale</strong> di un comparto che acquista lungo tutta la scala tecnologica, dal componente grezzo al servizio ad alto valore aggiunto.</p>
-    <p>Un pattern rilevante emerge dall’analisi dei flussi: i settori ad alta tecnologia — <strong>mezzi di trasporto, R&amp;S, ICT</strong> — tendono a propagare la spesa prevalentemente all’interno del proprio sistema produttivo, a conferma dell’<strong>elevata integrazione verticale</strong> che caratterizza queste filiere. Al contrario, comparti come le costruzioni e le riparazioni industriali generano flussi più diffusi e meno concentrati, attivando una gamma più eterogenea di fornitori a valle. Nel complesso, il diagramma restituisce l’immagine di un settore che funziona da <strong>moltiplicatore di domanda aggregata su larga scala</strong>: ogni euro speso in Aerospazio &amp; Difesa innesca una catena di acquisti, produzioni e redditi che attraversa trasversalmente l’economia italiana, raggiungendo comparti e territori ben oltre i confini della filiera tecnologica diretta.</p>
+    <p>Il diagramma illustra la <strong>propagazione della spesa del comparto nell’economia italiana</strong>, mappando i flussi che si generano a partire dai settori direttamente attivati fino ai comparti raggiunti in via indiretta lungo la catena di fornitura. La lettura del grafico è immediata: a sinistra si collocano i <strong>settori di spesa primaria</strong>: mezzi di trasporto, elettronica, informatica, ricerca e sviluppo, consulenze e telecomunicazioni, mentre a destra si dispiegano i comparti della filiera attivata, in un ventaglio che copre l’intera struttura produttiva italiana.</p>
+    <p>Ciò che il diagramma rende visivamente evidente è la <strong>straordinaria ampiezza della propagazione</strong>: la spesa del comparto non si concentra in pochi settori contigui, ma si diffonde capillarmente attraverso decine di comparti, che spaziano dalla manifattura avanzata (metallurgia, gomma e plastica, apparecchiature elettriche) ai servizi professionali e finanziari, dall’energia e raffinazione alle attività immobiliari, fino a settori di consumo finale come l’industria alimentare, l’istruzione e i servizi personali. Questa ampiezza non è casuale: riflette la struttura <strong>intrinsecamente trasversale</strong> di un comparto che acquista lungo tutta la scala tecnologica, dal componente grezzo al servizio ad alto valore aggiunto.</p>
+    <p>Un pattern rilevante emerge dall’analisi dei flussi: i settori ad alta tecnologia, <strong>mezzi di trasporto, R&amp;S e ICT</strong>, tendono a propagare la spesa prevalentemente all’interno del proprio sistema produttivo, a conferma dell’<strong>elevata integrazione verticale</strong> che caratterizza queste filiere. Al contrario, comparti come le costruzioni e le riparazioni industriali generano flussi più diffusi e meno concentrati, attivando una gamma più eterogenea di fornitori a valle. Nel complesso, il diagramma restituisce l’immagine di un settore che funziona da <strong>moltiplicatore di domanda aggregata su larga scala</strong>: ogni euro speso in Aerospazio &amp; Difesa innesca una catena di acquisti, produzioni e redditi che attraversa trasversalmente l’economia italiana, raggiungendo comparti e territori ben oltre i confini della filiera tecnologica diretta.</p>
   </div>
   <div class="cb" style="background:var(--grey-light);padding:24px 32px;">
-    <div class="cb__num">Grafico 06</div>
+    <div class="cb__num">Grafico 05</div>
     <div class="cb__title">Diagramma di propagazione della spesa — flussi settoriali</div>
     <div class="cb__desc">Flussi dalla spesa A&D verso i settori della filiera e le catene di approvvigionamento, dall'agricoltura ai servizi sanitari</div>
     <iframe src='https://flo.uri.sh/visualisation/28420845/embed' title='Interactive or visual content' class='flourish-embed-iframe' frameborder='0' scrolling='no' style='width:100%;height:1000px;' sandbox='allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation'></iframe>
@@ -757,8 +759,8 @@
 <div class="insight">
   <div class="insight__bar"></div>
   <div>
-    <div class="insight__label">Messagio Chiave #4</div>
-    <div class="insight__text">La spesa in Aerospazio & Difesa non consuma internamente al comparto, ma si diffonde capillarmente attraverso l'intera struttura produttiva italiana: dalla metallurgia ai servizi finanziari, dall'energia all'istruzione. Il diagramma dei flussi settoriali lo rende visivamente inequivocabile — questo è un settore che funziona da motore di domanda aggregata su scala sistemica.</div>
+    <div class="insight__label">Messaggio chiave #4</div>
+    <div class="insight__text">La spesa in Aerospazio & Difesa non consuma internamente al comparto, ma si diffonde capillarmente attraverso l'intera struttura produttiva italiana: dalla metallurgia ai servizi finanziari, dall'energia all'istruzione. Il diagramma dei flussi settoriali lo rende visivamente inequivocabile: questo è un settore che funziona da motore di domanda aggregata su scala sistemica.</div>
   </div>
 </div>
 
@@ -786,7 +788,7 @@
         <div class="step__n">02</div>
         <div>
           <h4>Shock di domanda</h4>
-          <p>Lo scenario di analisi utilizza come shock di domanda la spesa del comparto nel 2023 per l'acquisto di beni e servizi, così come costo del personale sul mercato nazionale. Gli impatti sono stimati in termini di contributo a PIL, Valore della Produzione, Occupazione, Redditi e Gettito fiscale.</p>
+          <p>Lo scenario di analisi utilizza come shock di domanda la spesa delle aziende del comparto nel 2023 per l'acquisto di beni e servizi, così come costo del personale sul mercato nazionale. Gli impatti sono stimati in termini di contributo a PIL, Valore della Produzione, Occupazione, Redditi e Gettito fiscale.</p>
         </div>
       </div>
       <div class="step">
@@ -800,14 +802,14 @@
         <div class="step__n">04</div>
         <div>
           <h4>Perimetro della spesa — Mediobanca</h4>
-          <p>Punto di partenza: <a href="https://www.areastudimediobanca.com/it/product/report-difesa-sistema-difesa-nel-mondo-e-italia-ed-2024" target="_blank" rel="noopener" style="color:var(--lime);text-underline-offset:3px;">studio Area Studi Mediobanca (ed. 2024)</a> — perimetro di imprese del comparto con fatturato aggregato di circa 20 miliardi di euro. Dai settori ATECO corrispondenti sono stati rilevati da ISTAT i fatturati complessivi nazionali, le spese per il personale e gli acquisti di beni e servizi. Questi settori definiscono l'<strong style="color:var(--lime)">origine</strong> della spesa — dove le imprese operano e sostengono i costi — non la destinazione degli acquisti.</p>
+          <p>Punto di partenza: <a href="https://www.areastudimediobanca.com/it/product/report-difesa-sistema-difesa-nel-mondo-e-italia-ed-2024" target="_blank" rel="noopener" style="color:var(--lime);text-underline-offset:3px;">studio Area Studi Mediobanca (ed. 2024)</a>, con un perimetro di imprese del comparto e fatturato aggregato di circa 20 miliardi di euro. Dai settori ATECO corrispondenti sono stati rilevati da ISTAT i fatturati complessivi nazionali, le spese per il personale e gli acquisti di beni e servizi. Dai fatturati e dalle spese complessive è stata isolata la quota attribuibile alle imprese operanti nel comparto, distinguendo tra componente civile e militare.</p>
         </div>
       </div>
       <div class="step">
         <div class="step__n">05</div>
         <div>
           <h4>Dalla provenienza alla destinazione</h4>
-          <p>I settori ATECO di origine non coincidono con i settori che ricevono realmente gli acquisti. Per stimare dove la spesa si riversa concretamente, si utilizzano i dati ISTAT sugli investimenti fissi lordi degli stessi settori, isolando la quota attribuibile alle imprese aerospaziali e distinguendo tra componente civile e militare. È questo passaggio che alimenta il modello SAM.</p>
+          <p>I settori del punto 04 definiscono l'<strong style="color:var(--lime)">origine</strong> della spesa, ovvero dove le imprese operano e sostengono i costi, non la destinazione degli acquisti. Per stimare dove la spesa si riversa concretamente, si utilizzano i dati ISTAT sugli investimenti fissi lordi degli stessi settori. È questo passaggio che alimenta il modello SAM.</p>
         </div>
       </div>
       <div class="step">
@@ -829,9 +831,8 @@
 
     <div class="tx tx--d">
       <h3>Analisi della spesa complessiva del comparto</h3>
-      <p>Per costruire correttamente il modello di impatto macroeconomico, il primo passo è stato definire con precisione il perimetro della spesa: si è partiti dall'universo delle imprese del comparto Aerospazio & Difesa attive in Italia, isolando progressivamente la sola quota di spesa riconducibile alla produzione nazionale ed escludendo le componenti non pertinenti.</p>
-      <p>Al fine di quantificare la spesa sostenuta dal tessuto produttivo italiano attribuibile al comparto, l'analisi si è concentrata esclusivamente sulla <strong>componente privata</strong> (grandi imprese e PMI).</p>
-      <p>È fondamentale distinguere tra <strong>provenienza</strong> e <strong>destinazione</strong> della spesa. I settori mostrati nel Grafico 03 indicano da dove viene la spesa — i comparti ATECO in cui le imprese del campione operano e classificano i propri costi. Non rappresentano necessariamente i settori che ricevono gli acquisti: un'impresa aerospaziale classificata nel settore "trasporti" può acquistare componenti ICT, servizi di R&amp;S o materiali industriali. Per ricondurre la spesa ai settori effettivamente destinatari, si sono utilizzati i dati ISTAT sugli investimenti fissi lordi in attività non finanziarie degli stessi settori.</p>
+      <p>Per modulare correttamente lo shock macroeconomico, il primo passo è stato definire con precisione il perimetro della spesa: si è partiti dall'universo delle imprese del comparto Aerospazio &amp; Difesa attive in Italia, isolando progressivamente la sola quota di spesa riconducibile alla produzione nazionale ed escludendo le componenti non pertinenti. L'analisi si è concentrata esclusivamente sulla <strong>componente privata</strong> (grandi imprese e PMI).</p>
+      <p>Una volta definito il perimetro della spesa delle imprese del comparto, è fondamentale distinguere tra <strong>provenienza</strong> e <strong>destinazione</strong> della spesa. I settori mostrati nel Grafico 06 indicano da dove viene la spesa: i comparti ATECO in cui le imprese del campione operano e classificano i propri costi. Non rappresentano necessariamente i settori che ricevono gli acquisti: un'impresa del comparto classificata nel settore "trasporti" può acquistare componenti ICT, servizi di R&amp;S o materiali industriali. Per ricondurre la spesa ai settori effettivamente destinatari, si sono utilizzati i dati ISTAT sugli investimenti fissi lordi in attività non finanziarie degli stessi settori.</p>
 
       <div class="hlb">
         <div class="hlb__bar"></div>
@@ -839,7 +840,7 @@
       </div>
 
       <div class="cb cb--light" style="background:var(--grey-light);padding:24px 32px;margin-top:24px;">
-        <div class="cb__num">Grafico 03</div>
+        <div class="cb__num">Grafico 06</div>
         <div class="cb__title">Settori di origine della spesa del comparto — 2023</div>
         <div class="cb__desc">Composizione percentuale per settore ATECO di provenienza: i comparti in cui operano le imprese del campione, non i destinatari degli acquisti</div>
         <iframe src='https://flo.uri.sh/visualisation/28426017/embed' title='Interactive or visual content' class='flourish-embed-iframe' frameborder='0' scrolling='no' style='width:100%;height:250px;' sandbox='allow-same-origin allow-forms allow-scripts allow-downloads allow-popups allow-popups-to-escape-sandbox allow-top-navigation-by-user-activation'></iframe>
@@ -878,7 +879,7 @@
 
 <script>
   const dots = document.querySelectorAll('.toc__dot');
-  const tocIds = ['hero','impatti','takeaways','metodologia','dettaglio','funding','rearm'];
+  const tocIds = ['hero','impatti','takeaways','dettaglio','metodologia'];
 
   function setActiveDot(id) {
     const d = document.querySelector(`.toc__dot[data-s="${id}"]`);
