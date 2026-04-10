@@ -158,6 +158,8 @@
     .ni__n { font-family: var(--fm); font-size: 12px; color: var(--blu-700); letter-spacing: .1em; flex-shrink: 0; padding-top: 2px; }
     .ni h4 { font-weight: 600; font-size: 15px; color: var(--black); margin-bottom: 4px; }
     .ni p  { font-size: 14px; color: var(--grey-text); line-height: 1.6; }
+    .ni-accent { box-shadow: inset 4px 0 0 var(--ni-color); transition: box-shadow .25s ease, background .2s; }
+    .ni-accent:hover { box-shadow: inset 12px 0 0 var(--ni-color); }
 
     /* FLOURISH PLACEHOLDER */
     .fl { background: var(--grey-light); border: 2px dashed var(--grey-mid); padding: 48px 32px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px; min-height: 300px; text-align: center; transition: border-color .2s; }
@@ -637,40 +639,44 @@
   </div>
 
 
-  <!-- Interpretazione -->
-  <div class="c2">
-    <div class="tx">
-      <h3>Analisi della propagazione degli effetti</h3>
+  <!-- Analisi della propagazione -->
+  <div class="stitle">Analisi della propagazione degli effetti</div>
+  <div class="tx" style="margin-bottom:40px;">
       <p>La spesa del comparto può essere letta come uno <strong>shock di domanda</strong> di beni e servizi che attiva capacità produttiva lungo la filiera e genera un impatto positivo sulle principali dimensioni dell'economia. In termini operativi, ogni euro speso non produce effetti solo all'interno del settore, ma si trasmette ai fornitori, ai sub-fornitori e, attraverso i redditi generati, a una parte più ampia del sistema economico. La propagazione di questi effetti non è lineare né uniforme: dipende dalla struttura della filiera, dal grado di integrazione delle imprese nazionali nella catena del valore e dalla quota di spesa che rimane all'interno del sistema produttivo italiano piuttosto che disperdersi verso fornitori esteri. È proprio la capacità di trattenere valore lungo la filiera domestica, amplificandolo attraverso successivi cicli di spesa e investimento, a determinare la reale portata dell'impatto economico complessivo del comparto.</p>
 
-      <div class="stitle" style="margin-top:32px;">Le tre componenti dell'impatto</div>
-      <div class="nlist">
-        <div class="ni">
-          <div class="ni__n">01</div>
-          <div>
-            <h4>Impatti diretti</h4>
-            <p>Benefici economici generati nei settori immediatamente attivati dalla spesa del comparto: i fornitori diretti dei beni e servizi necessari alla produzione (mezzi di trasporto, ICT, costruzioni, ecc.). Prima trasformazione della spesa in Valore della Produzione, PIL e Occupazione.</p>
+  </div>
+
+  <!-- Interpretazione -->
+  <div class="c2" style="align-items:stretch;">
+    <div style="display:flex;flex-direction:column;">
+      <div class="tx"><h3>Le tre componenti dell'impatto</h3></div>
+      <div class="nlist" style="flex:1;display:flex;flex-direction:column;gap:3px;">
+        <div class="ni ni-accent" style="flex:1;flex-direction:column;justify-content:center;gap:0;padding:28px 28px;--ni-color:var(--blu-700);">
+          <div style="display:flex;align-items:baseline;gap:12px;margin-bottom:8px;">
+            <div class="ni__n" style="font-size:19px;">01</div>
+            <h4 style="font-size:17px;margin-bottom:0;">Impatti diretti</h4>
           </div>
+          <p>Benefici economici generati nei settori immediatamente attivati dalla spesa del comparto: i fornitori diretti dei beni e servizi necessari alla produzione (mezzi di trasporto, ICT, costruzioni, ecc.). Prima trasformazione della spesa in Valore della Produzione, PIL e Occupazione.</p>
         </div>
-        <div class="ni">
-          <div class="ni__n">02</div>
-          <div>
-            <h4>Impatti indiretti</h4>
-            <p>Benefici che si propagano lungo le catene di approvvigionamento: i fornitori diretti acquistano a loro volta da sub-fornitori (energia, manifattura leggera e pesante, servizi professionali, trasporti, settore alberghiero e ricettivo, ecc.). Cattura la dimensione "di filiera" del comparto e la sua capacità di attivare sistemi produttivi che vanno oltre il settore.</p>
+        <div class="ni ni-accent" style="flex:1;flex-direction:column;justify-content:center;gap:0;padding:28px 28px;--ni-color:var(--blu-500);">
+          <div style="display:flex;align-items:baseline;gap:12px;margin-bottom:8px;">
+            <div class="ni__n" style="font-size:19px;">02</div>
+            <h4 style="font-size:17px;margin-bottom:0;">Impatti indiretti</h4>
           </div>
+          <p>Benefici che si propagano lungo le catene di approvvigionamento: i fornitori diretti acquistano a loro volta da sub-fornitori (energia, manifattura leggera e pesante, servizi professionali, trasporti, settore alberghiero e ricettivo, ecc.). Cattura la dimensione "di filiera" del comparto e la sua capacità di attivare sistemi produttivi che vanno oltre il settore.</p>
         </div>
-        <div class="ni">
-          <div class="ni__n">03</div>
-          <div>
-            <h4>Impatti indotti</h4>
-            <p>Effetti della reimmissione dei redditi nell'economia. L'aumento del Valore della Produzione e Occupazione genera redditi per famiglie e imprese e può tradursi in maggiori entrate per lo Stato; una parte di questi redditi viene poi spesa in consumi e investimenti, alimentando ulteriormente la domanda in altri settori.</p>
+        <div class="ni ni-accent" style="flex:1;flex-direction:column;justify-content:center;gap:0;padding:28px 28px;--ni-color:var(--blu-400);">
+          <div style="display:flex;align-items:baseline;gap:12px;margin-bottom:8px;">
+            <div class="ni__n" style="font-size:19px;">03</div>
+            <h4 style="font-size:17px;margin-bottom:0;">Impatti indotti</h4>
           </div>
+          <p>Effetti della reimmissione dei redditi nell'economia. L'aumento del Valore della Produzione e Occupazione genera redditi per famiglie e imprese e può tradursi in maggiori entrate per lo Stato; una parte di questi redditi viene poi spesa in consumi e investimenti, alimentando ulteriormente la domanda in altri settori.</p>
         </div>
       </div>
     </div>
 
     <div>
-      <div class="stitle" style="margin-top:0;">Moltiplicatori di spesa</div>
+      <div class="tx"><h3>Moltiplicatori di spesa</h3></div>
       <div class="c3" style="gap:2px;margin-bottom:32px;">
         <div class="ic">
           <div class="ic__icon"><i data-lucide="zap"></i></div>
@@ -703,8 +709,6 @@
       </div>
     </div>
   </div>
-
-  <div class="sp48"></div>
 
   <!-- Diffusione settoriale -->
   <div class="stitle">Diffusione settoriale dei benefici</div>
