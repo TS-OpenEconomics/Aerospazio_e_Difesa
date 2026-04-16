@@ -78,6 +78,7 @@
     .hero__cap { position: absolute; bottom: 0; left: 0; right: 0; background: var(--blu-900); padding: 12px 24px; display: flex; justify-content: space-between; align-items: center; opacity: .9; }
     .hero__cap span { font-family: var(--fm); font-size: 11px; letter-spacing: .1em; text-transform: uppercase; color: var(--grey-mid); }
     .hero__cap strong { color: var(--lime); }
+    .hero__tag i { width: 12px; height: 12px; stroke: var(--black); fill: none; stroke-width: 2; display: inline-block; vertical-align: middle; }
 
     /* SECTIONS */
     .s-dark  { background: var(--blu-900); padding: 104px 64px 72px; }
@@ -102,8 +103,10 @@
     .mc:hover .mcl, .mc:hover .mcu, .mc:hover .mcd { color: var(--grey-mid); }
     .mc:hover .mcv { color: var(--white); }
     .mc:hover .mcl { color: var(--blu-400); }
-    .mcw { width: 30px; height: 30px; margin-bottom: 6px; }
-    .mci { width: 30px; height: 30px; stroke: var(--blu-700); fill: none; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; transition: stroke .2s; }
+    .mcw { width: 48px; height: 48px; margin-bottom: 8px; }
+    .mci { width: 30px; height: 30px; stroke: var(--blu-700); fill: none; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; transition: stroke .2s; display: block; }
+    .mc-png-icon { width: 48px; height: 48px; object-fit: contain; display: block; border-radius: 0; transition: filter .2s; }
+    .mc:hover .mc-png-icon { filter: brightness(1.15); }
     .mcl { font-family: var(--fm); font-size: 13px; letter-spacing: .13em; text-transform: uppercase; color: var(--black); transition: color .2s; font-weight: bold; min-height: 2.8em; display: flex; align-items: flex-start; }
     .mcv { font-family: var(--fd); font-weight: 400; font-size: 41px; color: var(--blu-700); line-height: 1; transition: color .2s; }
     .mcu { font-family: var(--fm); font-size: 13px; color: var(--grey-text); transition: color .2s; }
@@ -146,6 +149,8 @@
     .ic { background: var(--blu-800); padding: 28px 22px; display: flex; flex-direction: column; gap: 10px; transition: background .25s; cursor: default; }
     .ic:hover { background: var(--blu-700); }
     .ic__icon svg { width: 34px; height: 34px; stroke: var(--lime); fill: none; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; }
+    .ic__icon i { width: 34px; height: 34px; stroke: var(--lime); fill: none; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; display: block; }
+    .ic--l .ic__icon i, .ic__icon i[style*="blu-700"] { stroke: var(--blu-700); }
     .ic__lbl   { font-family: var(--fm); font-size: 12px; letter-spacing: .16em; text-transform: uppercase; color: var(--lime); }
     .ic__val   { font-family: var(--fd); font-weight: 400; font-size: 29px; color: var(--lime); line-height: 1; }
     .ic__title { font-weight: 600; font-size: 14px; color: var(--white); }
@@ -165,6 +170,7 @@
     .fl { background: var(--grey-light); border: 2px dashed var(--grey-mid); padding: 48px 32px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px; min-height: 300px; text-align: center; transition: border-color .2s; }
     .fl:hover { border-color: var(--blu-700); }
     .fl svg { width: 36px; height: 36px; stroke: var(--grey-mid); fill: none; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; }
+    .fl-icon { width: 36px; height: 36px; stroke: var(--grey-mid); fill: none; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; display: block; }
     .fl__tag   { font-family: var(--fm); font-size: 10px; letter-spacing: .14em; text-transform: uppercase; color: var(--grey-text); margin-top: 8px; }
     .fl__title { font-weight: 600; font-size: 15px; color: var(--grey-text); }
     .fl__desc  { font-size: 13px; color: var(--grey-text); max-width: 260px; line-height: 1.5; }
@@ -279,36 +285,6 @@
     }
   </style>
   <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
-  <style>
-
-    /* Custom PNG icons in macro cards */
-    .mc-png-icon {
-      width: 48px;
-      height: 48px;
-      object-fit: contain;
-      display: block;
-      /* The PNGs have a dark purple bg — show them as-is on light bg,
-         invert slightly on hover when card goes dark */
-      border-radius: 0;
-      transition: filter .2s;
-    }
-    /* On hover the card bg goes blu-900 which matches the icon bg perfectly */
-    .mc:hover .mc-png-icon {
-      filter: brightness(1.15);
-    }
-    /* Make mcw a bit bigger to accommodate the 48px icon */
-    .mcw { width: 48px; height: 48px; margin-bottom: 8px; }
-    /* Lucide icon sizing for macro cards */
-    .mci { width: 30px; height: 30px; stroke: var(--blu-700); fill: none; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; transition: stroke .2s; display: block; }
-    .mc:hover .mci { stroke: var(--lime); }
-    /* Lucide icon sizing for info cards */
-    .ic__icon i { width: 34px; height: 34px; stroke: var(--lime); fill: none; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; display: block; }
-    .ic--l .ic__icon i, .ic__icon i[style*="blu-700"] { stroke: var(--blu-700); }
-    /* Lucide icon sizing for flourish placeholders */
-    .fl-icon { width: 36px; height: 36px; stroke: var(--grey-mid); fill: none; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; display: block; }
-    /* Hero tag icon */
-    .hero__tag i { width: 12px; height: 12px; stroke: var(--black); fill: none; stroke-width: 2; display: inline-block; vertical-align: middle; }
-  </style>
 </head>
 <body>
 
@@ -881,20 +857,25 @@
 </footer>
 
 <script>
-  const dots = document.querySelectorAll('.toc__dot');
+  const dots = Array.from(document.querySelectorAll('.toc__dot'));
   const tocIds = ['hero','impatti','takeaways','dettaglio','metodologia'];
+  const sections = tocIds
+    .map(id => document.getElementById(id))
+    .filter(Boolean);
+  const dotBySection = new Map(dots.map(dot => [dot.dataset.s, dot]));
 
   function setActiveDot(id) {
-    const d = document.querySelector(`.toc__dot[data-s="${id}"]`);
-    if (d) { dots.forEach(x => x.classList.remove('active')); d.classList.add('active'); }
+    const dot = dotBySection.get(id);
+    if (!dot) return;
+    dots.forEach(item => item.classList.remove('active'));
+    dot.classList.add('active');
   }
 
   function updateActiveDot() {
     const trigger = window.scrollY + window.innerHeight * 0.35;
     let current = tocIds[0];
-    tocIds.forEach(id => {
-      const el = document.getElementById(id);
-      if (el && el.offsetTop <= trigger) current = id;
+    sections.forEach(section => {
+      if (section.offsetTop <= trigger) current = section.id;
     });
     setActiveDot(current);
   }
