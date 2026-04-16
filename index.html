@@ -23,12 +23,11 @@
       --grey-mid:   #DDDDDA;
       --grey-text:  #555555;
       --fd:         'Hedvig Letters Serif', Lora, Georgia, serif;
-      --fb:         'Atkinson Hyperlegible Next', Poppins, Calibri, sans-serif;
       --fm:         'Atkinson Hyperlegible Next', Poppins, Calibri, sans-serif;
     }
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     html { scroll-behavior: smooth; }
-    body { font-family: var(--fb); color: var(--black); background: var(--white); line-height: 1.6; font-variant-ligatures: no-common-ligatures; }
+    body { font-family: var(--fm); color: var(--black); background: var(--white); line-height: 1.6; font-variant-ligatures: no-common-ligatures; }
 
 
     /* Nav logo image */
@@ -36,10 +35,6 @@
     .nav__logo-img  { height: 22px; width: auto; display: block; opacity: .9; mix-blend-mode: screen; transition: opacity .2s; }
     .nav__logo-link:hover .nav__logo-img { opacity: 1; }
 
-    /* Footer logo image */
-    .footer__logo-link { display: flex; align-items: center; text-decoration: none; }
-    .footer__logo-img  { height: 18px; width: auto; display: block; opacity: .7; mix-blend-mode: screen; transition: opacity .2s; }
-    .footer__logo-link:hover .footer__logo-img { opacity: 1; }
     /* NAV */
     .nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; background: var(--blu-900); height: 56px; padding: 0 48px; display: flex; align-items: center; justify-content: space-between; }
     .nav::after { content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 3px; background: var(--lime); }
@@ -150,7 +145,6 @@
     .ic:hover { background: var(--blu-700); }
     .ic__icon svg { width: 34px; height: 34px; stroke: var(--lime); fill: none; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; }
     .ic__icon i { width: 34px; height: 34px; stroke: var(--lime); fill: none; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; display: block; }
-    .ic--l .ic__icon i, .ic__icon i[style*="blu-700"] { stroke: var(--blu-700); }
     .ic__lbl   { font-family: var(--fm); font-size: 12px; letter-spacing: .16em; text-transform: uppercase; color: var(--lime); }
     .ic__val   { font-family: var(--fd); font-weight: 400; font-size: 29px; color: var(--lime); line-height: 1; }
     .ic__title { font-weight: 600; font-size: 14px; color: var(--white); }
@@ -166,14 +160,6 @@
     .ni-accent { box-shadow: inset 4px 0 0 var(--ni-color); transition: box-shadow .25s ease, background .2s; }
     .ni-accent:hover { box-shadow: inset 12px 0 0 var(--ni-color); }
 
-    /* FLOURISH PLACEHOLDER */
-    .fl { background: var(--grey-light); border: 2px dashed var(--grey-mid); padding: 48px 32px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px; min-height: 300px; text-align: center; transition: border-color .2s; }
-    .fl:hover { border-color: var(--blu-700); }
-    .fl svg { width: 36px; height: 36px; stroke: var(--grey-mid); fill: none; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; }
-    .fl-icon { width: 36px; height: 36px; stroke: var(--grey-mid); fill: none; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; display: block; }
-    .fl__tag   { font-family: var(--fm); font-size: 10px; letter-spacing: .14em; text-transform: uppercase; color: var(--grey-text); margin-top: 8px; }
-    .fl__title { font-weight: 600; font-size: 15px; color: var(--grey-text); }
-    .fl__desc  { font-size: 13px; color: var(--grey-text); max-width: 260px; line-height: 1.5; }
 
     /* CHARTS GRID */
     .ch2 { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; }
@@ -203,7 +189,7 @@
     /* FOOTER */
     .footer {
       background: var(--black);
-      font-family: var(--fb);
+      font-family: var(--fm);
     }
     .footer__top {
       display: grid;
@@ -212,7 +198,7 @@
       padding: 56px 64px 48px;
       border-bottom: 1px solid #2a2a2a;
     }
-    .footer__logo-link { display: inline-block; margin-bottom: 20px; }
+    .footer__logo-link { display: inline-block; text-decoration: none; margin-bottom: 20px; }
     .footer__logo-img  { height: 20px; width: auto; display: block; opacity: .9; mix-blend-mode: screen; transition: opacity .2s; }
     .footer__logo-link:hover .footer__logo-img { opacity: 1; }
     .footer__tagline {
